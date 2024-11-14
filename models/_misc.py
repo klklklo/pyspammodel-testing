@@ -5,7 +5,7 @@ from importlib_resources import files
 
 @functools.cache
 def read_coeffs(file):
-    return xr.open_dataset(files('pyspammodel._coeffs').joinpath(file))
+    return xr.open_dataset(files('models._coeffs').joinpath(file))
 
 
 def get_aero_spam_coeffs():
